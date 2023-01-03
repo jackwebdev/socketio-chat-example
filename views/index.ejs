@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= header %></h1>
+    <p>Open the dev console to see logs!</p>
+    <p>Try opening up new tabs. Each tab is a new user!</p>
+
+    <!-- Chat messages -->
+    <ul id="all-messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+  </body>
+  <!-- No need to use the CDN is it's already installed in the project -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- This is the javascript file of your own custom code -->
+  <script src="/javascript/client-socket.js"></script>
+</html>
